@@ -429,6 +429,12 @@ background-color: ;*/
     background-color: var(--ocean);
 }
 
+/**
+  |============================
+  | Skill Styles
+  |============================
+*/
+
 .main-skills {
     padding: 120px 0;
 }
@@ -633,25 +639,8 @@ display: flex;
 
 }
 
-.main-tmbl-list-item {}
-
-.tmbl-div {
-    padding: 32px 16px;
-    border: 1px solid var(--cornflower);
-    border-top: none;
-}
-
-.tmbl-link-img {
-    display: block;
+.main-tmbl-list-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tmbl-link-img:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.tmbl-link-img:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .tmbl-box {
@@ -659,26 +648,12 @@ display: flex;
     overflow: hidden;
 }
 
-.tmbl-img {}
+.tmbl-div {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
 
-/*.tmbl-overlay {
-        position: absolute;
-                top: 0;
-                left: 0;
-                transform: translateY(100%);
-                transition-property: transform;
-                transition-duration: 1000ms;
-                transition-timing-function: ease;
-                transition-delay: 200ms;
-        
-                width: 100%;
-                height: 100%;
-        
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 40px;
-}*/
 .tmbl-overlay-text {
     position: absolute;
     top: 0;
@@ -729,6 +704,42 @@ display: flex;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+.tmbl-link-img {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tmbl-link-img:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.tmbl-link-img:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+.tmbl-img {}
+
+/*.tmbl-overlay {
+        position: absolute;
+                top: 0;
+                left: 0;
+                transform: translateY(100%);
+                transition-property: transform;
+                transition-duration: 1000ms;
+                transition-timing-function: ease;
+                transition-delay: 200ms;
+        
+                width: 100%;
+                height: 100%;
+        
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 40px;
+}*/
+
 
 /**
 |============================
