@@ -224,7 +224,22 @@ button {
 .header-container {
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+    
+}
+
+.current {
+    color: var(--ocean);
+}
+.current::after {
+content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--ocean);
+    border-radius: 2px;
 }
 
 .header-nav {
@@ -257,11 +272,8 @@ button {
     position: relative;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    /*padding-right: 76px;*/
-
-    /* color: var(--navyblue);*/
-    color: var(--ocean);
+    
+   /* color: var(--ocean);*/
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -270,10 +282,9 @@ button {
 
 }
 
-.header-nav-list-item-link::after {
+/*.header-nav-list-item-link::after {
     content: "";
     position: absolute;
-    /*bottom: 20px;*/
     bottom: -1px;
     left: 0;
 
@@ -281,10 +292,8 @@ button {
     height: 4px;
     background-color: var(--ocean);
     border-radius: 2px;
-    /*background-color: #fff;*/
-    /*border-radius: 4px;*/
-
 }
+*/
 
 
 .header-nav-list-item-link:focus {
@@ -357,18 +366,17 @@ button {
   |============================
 */
 .main-hero {
-    /*width: 1440px;
-        height: 600px;*/
+    
     max-width: 1440px;
     padding: 188px 0;
     background-color: var(--navyblue);
+    margin: 0 auto;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* padding: 188px 472px 292px;
-        padding-bottom: ; */
+
 }
 
 .main-hero-container {
@@ -457,7 +465,7 @@ background-color: ;*/
     width: 264px;
     height: 112px;
 
-
+    border: 1px solid #8E8F99;
     border-radius: 4px;
 
     /*border: 1px solid rgba(255, 255, 255, 0,5);*/
@@ -469,14 +477,11 @@ background-color: ;*/
 
 .skill-list-svg {
 
-    /* display: inline-flex;
-                align-items: center;
-                justify-content: center;*/
-
     width: 64px;
     height: 64px;
-    padding-top: 24px;
-    margin-bottom: 24px;
+   
+    /*padding-top: 24px;
+    margin-bottom: 24px;*/
 
 }
 
@@ -583,7 +588,7 @@ display: flex;
     justify-content: center;
 
     gap: 24px;
-    margin-bottom: 32px;
+   /* margin-bottom: 32px;*/
     /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
@@ -624,6 +629,10 @@ display: flex;
 | Portpholio tmbl styles 
 |============================
 */
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .main-tmbl {}
 
@@ -637,7 +646,6 @@ display: flex;
 }
 
 .main-tmbl-list-item {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -710,6 +718,7 @@ display: flex;
 
 .main-tmbl-list-item:focus .tmbl-overlay-text {
     transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /*.tmbl-link-img:hover .tmbl-overlay-text {
